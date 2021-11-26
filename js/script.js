@@ -83,7 +83,7 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
   function(responseText){
-    document.querySelector("#main-contect").innerHTML = responseText;
+    document.querySelector("#main-contect").innerHTML = buildAndShowHomeHTML(responseText);
   },
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
