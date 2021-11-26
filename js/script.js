@@ -120,7 +120,9 @@ function buildAndShowHomeHTML (categories) {
       var found = false;
       var i = 0;
       while(!found || i < categories.length){
-        console.log(categories[i].short_name == chosenCategoryShortName);
+        if(i==0){
+          console.log(categories[i].short_name == chosenCategoryShortName);
+        }
         if(categories[i].short_name == chosenCategoryShortName){
           found = true;
         } else {
