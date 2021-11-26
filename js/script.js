@@ -119,7 +119,7 @@ function buildAndShowHomeHTML (categories) {
       var homeHtmlToInsertIntoMainPage = homeHtml;
       var found = false;
       var i = 0;
-      while(!found && i < categories.length){
+      while(!found || i < categories.length){
         if(categories[i].short_name == chosenCategoryShortName){
           found = true;
         }
